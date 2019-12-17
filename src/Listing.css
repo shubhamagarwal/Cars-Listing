@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 450px auto;
+    background-color: white;
+    margin: 8px 8px 0px 8px;
+}
+
+.filter-panel {
+    background-color: white;
+    margin: 8px 0px 0px 8px;
+    border: 1px solid #EDEDED;
+}
+
+.car-listing {
+    background-color: white;
+    margin: 8px 0px 0px 8px;
+}
+
+.filter-box {
+    margin: 24px 24px 0px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-submit {
+    margin: 24px;
+    width: 128px;
+    height: 32px;
+    color: white;
+    float: right;
+    display: block;
+    background-color: #EA7F28;
+    clear: left;
+}

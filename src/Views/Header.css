@@ -1,0 +1,28 @@
+.header {
+   height: 80px;
+   background-color: white;
+   margin: 0px 8px 0px 8px;
+   position: relative
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 8px;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
