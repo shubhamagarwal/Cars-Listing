@@ -1,15 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Listing from './Listing';
 import Footer from './Views/Footer';
+import Error from './Views/Error';
 
 const App = () => {
     return (
         <Router>
-            <div>
+            <Switch>
                 <Route exact path="/" component={Listing} />
                 <Route exact path="/about" component={Footer} />
-            </div>
+                <Route path="*" component={Error} />
+            </Switch>
         </Router>
     )
 }

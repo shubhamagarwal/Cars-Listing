@@ -1,0 +1,25 @@
+.error-page {
+    margin: 8px;
+    background-color: white;
+    height: 546px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.link-homepage {
+    color: #EA7F28;
+    text-decoration: none;
+}
+
+.err-title {
+    margin: 12px;
+    font: bold 32px Roboto;
+}
+
+.err-msg {
+    text-align: center;
+    line-height: 1.5;
+}

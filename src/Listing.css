@@ -1,14 +1,22 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 450px auto;
     background-color: white;
     margin: 8px 8px 0px 8px;
+    height: 546px;
 }
 
 .filter-panel {
     background-color: white;
-    margin: 8px 0px 0px 8px;
+    margin: 24px 0px 0px 8px;
     border: 1px solid #EDEDED;
+    height: 300px;
 }
 
 .car-listing {
@@ -22,13 +30,39 @@
     flex-direction: column;
 }
 
-.filter-submit {
+.filter-box > div, span, a {
+    margin: 8px 0;
+}
+.car-listing {
     margin: 24px;
-    width: 128px;
-    height: 32px;
-    color: white;
-    float: right;
-    display: block;
+}
+
+.car-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100px;
+}
+
+.btn-style {
     background-color: #EA7F28;
-    clear: left;
+    color: white;
+    width: 128px;
+    line-height: 32px;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #D37324;
+}
+
+.cars-count {
+    font: bold 18px Roboto;
+}
+
+.sort-mileage, .cars-availibility {
+    display: flex;
+    flex-direction: column;
 }

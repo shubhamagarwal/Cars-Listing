@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DropDown from './Components/DropDown';
@@ -64,10 +65,28 @@ function Listing() {
                             getFilterValue={getFilterValue}
                             selectedFilterValue={filterParam.selectedManufactured}
                         />
-                        <button className="filter-submit">Submit</button>
+                        <a className="btn-style" href="#">Submit</a>
                     </div>
                 </div>
-                <div className="car-listing">hello</div>
+                <div className="car-listing">
+                    <div className="car-header">
+                        <div className="cars-availibility">
+                            <span className="cars-count">Available Cars</span>
+                            <span>Showing 10 of 100 results</span>
+                        </div>
+                        <div className="sort-mileage">
+                            <span>Sort By</span> 
+                            <DropDown
+                                type="selectedColor"
+                                data={colorList} 
+                                getFilterValue={getFilterValue}
+                                selectedFilterValue={filterParam.selectedColor}
+                            />
+                        </div>
+                    </div>
+                    <div>hello</div>
+                </div>
+                
             </div>
             <Footer />
         </div>
