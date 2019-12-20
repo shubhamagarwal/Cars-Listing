@@ -20,4 +20,4 @@ const ErrorPage = () => {
     )
 }
 
-export default ErrorPage;
+export default React.memo(ErrorPage);

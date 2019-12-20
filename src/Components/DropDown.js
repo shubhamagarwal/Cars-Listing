@@ -21,7 +21,7 @@ const DropDown = (props) => {
                 }}
                 onChange={getFilterValue(type)}
             >
-                {data.map((item,i) => {
+                {data.length && data.map((item,i) => {
                     return (
                         <option key ={i} value={item}>{item}</option>
                     )
@@ -31,4 +31,4 @@ const DropDown = (props) => {
     )
 }
 
-export default DropDown;
+export default React.memo(DropDown);

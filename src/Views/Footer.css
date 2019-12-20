@@ -1,9 +1,13 @@
 .footer-info {
-    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     height: 80px;
     background-color: white;
     margin: 8px 8px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
 }
