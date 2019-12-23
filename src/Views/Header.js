@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+    PURCHASE,
+    MY_ORDERS,
+    SELL
+} from '../Shared/Constant';
 import './Header.css';
 import logo from './../logo.png';
 
 const Header = () => {
     return(
         <div className="header">
-                <img src={logo} className="auto1-logo" alt="logo" />
+                <Link to="/"><img src={logo} className="auto1-logo" alt="logo" /></Link>
                 <ul>
-                    {/* <Link to="/about"><li><button>Purchase</button></li></Link> */}
-                    <li><a href="#home">Purchase</a></li>
-                    <li><a href="#news">My Orders</a></li>
-                    <li><a href="#contact">Sell</a></li>
+                    <li><a href="#home">{PURCHASE}</a></li>
+                    <li><a href="#news">{MY_ORDERS}</a></li>
+                    <li><a href="#contact">{SELL}</a></li>
                 </ul>
-            </div>
+        </div>
     )
 }
 

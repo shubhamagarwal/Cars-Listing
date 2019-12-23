@@ -1,0 +1,29 @@
+.detail-wrapper1 {
+    height: 300px;
+}
+
+.detail-wrapper {
+    height: 500px;
+    margin: 8px 8px 0px 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.fav-section {
+    border: 2px solid #EDEDED;
+}
+
+.fav-text {
+    margin: 8px;
+    line-height: 1.5;
+}
+
+.car-info-section {
+    display: flex;
+}
+
+.car-details, .fav-section, .car-info-section {
+    margin: 24px;
+    line-height: 1.5;
+}

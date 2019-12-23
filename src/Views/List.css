@@ -1,4 +1,4 @@
-.grid-container {
+.car-search-container {
     display: grid;
     grid-template-columns: 450px auto;
     background-color: white;
@@ -91,4 +91,12 @@ a, .view-details {
 
 .car-spec-list {
     margin: 0px 24px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0px 8px 0px 8px;
 }

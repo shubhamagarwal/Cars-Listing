@@ -1,0 +1,11 @@
+export const ALL_CAR_COLORS = 'All car colors';
+export const ALL_MANUFACTURERS = 'All manufacturers';
+export const PURCHASE= 'Purchase';
+export const MY_ORDERS = 'My Orders';
+export const SELL = 'Sell';
+export const MAX_PAGES = '6'
+export const VIEW_DETAILS = 'View details';
+export const AVAILABLE_CARS = 'Available Cars';
+export const FILTER = 'Filter';
+export const MANUFACTURER = 'Manufacturer';
+export const COLOR = 'Color';
