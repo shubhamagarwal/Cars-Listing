@@ -75,7 +75,7 @@ const List = (props) => {
                                     <div className="car-spec-list">
                                         <div className="manufacture-name">{car.manufacturerName}</div>
                                         <div>Stock # {car.stockNumber} - {car.mileage.number} {car.mileage.unit} - {car.fuelType} - {car.color}</div>
-                                        <div className="view-details"><Link to="/detail" >{VIEW_DETAILS}</Link></div>
+                                        <div className="view-details"><Link to={`/detail/${car.stockNumber}`} >{VIEW_DETAILS}</Link></div>
                                     </div>
                                 </div>
                             </div>

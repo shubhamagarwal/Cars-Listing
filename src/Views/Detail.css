@@ -1,4 +1,4 @@
-.detail-wrapper1 {
+.img-wrapper {
     height: 300px;
 }
 
@@ -7,11 +7,12 @@
     margin: 8px 8px 0px 8px;
     background: white;
     display: flex;
-    align-items: center;
 }
 
 .fav-section {
     border: 2px solid #EDEDED;
+    height: 150px;
+    display: flex;
 }
 
 .fav-text {
@@ -26,4 +27,22 @@
 .car-details, .fav-section, .car-info-section {
     margin: 24px;
     line-height: 1.5;
+}
+
+.car-desc {
+    font: 18px Roboto;
+    margin: 8px 0px 8px 0px;
+}
+
+.fav-btn {
+    background-color: #EA7F28;
+    color: white;
+    width: 128px;
+    line-height: 32px;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 24px;
 }

@@ -9,7 +9,7 @@ const Routing = () => {
         <Router>
             <Switch>
                 <Route exact path="/" component={App} />
-                <Route exact path="/detail" component={Detail} />
+                <Route path="/detail/:carId" component={Detail} />
                 <Route path="*" component={Error} />
             </Switch>
         </Router>

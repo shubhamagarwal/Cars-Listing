@@ -48,7 +48,8 @@
     border-radius: 2px;
     text-decoration: none;
 }
-a:hover {
+
+.btn-style:hover {
     background-color: #D37324;
 }
 
