@@ -10,6 +10,8 @@
 }
 
 .fav-section {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #EDEDED;
     height: 150px;
     display: flex;
@@ -45,4 +47,15 @@
     border-radius: 2px;
     text-decoration: none;
     margin: 24px;
+}
+
+.no-details {
+    margin: 8px;
+    height: 550px;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 18px Roboto;
 }

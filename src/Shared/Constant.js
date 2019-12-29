@@ -10,3 +10,4 @@ export const FILTER = 'Filter';
 export const MANUFACTURER = 'Manufacturer';
 export const COLOR = 'Color';
 export const DELETE = 'Delete';
+export const FAV_LIST = 'Fav List';

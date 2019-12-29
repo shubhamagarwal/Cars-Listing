@@ -23,20 +23,19 @@ const FavouriteCars = (props) => {
             <Header />
             <div className="fav-list">
                 {favList.map((car,i) => {
-                        return (
-                            <div key={i} className="car-listing">
-                                <div className="car-spec">
-                                    <img className="car-logo" src={car.pictureUrl} alt={car.modelName} title={car.modelName} />
-                                    <div className="car-spec-list">
-                                        <div className="manufacture-name">{car.manufacturerName}</div>
-                                        <div>Stock # {car.stockNumber} - {car.mileage.number} {car.mileage.unit} - {car.fuelType} - {car.color}</div>
-                                        <div className="view-details"><a href="#" onClick={deleteFromList(car.stockNumber)}>{DELETE}</a></div>
-                                    </div>
+                    return (
+                        <div key={i} className="car-listing">
+                            <div className="car-spec">
+                                <img className="car-logo" src={car.pictureUrl} alt={car.modelName} title={car.modelName} />
+                                <div className="car-spec-list">
+                                    <div className="manufacture-name">{car.manufacturerName}</div>
+                                    <div>Stock # {car.stockNumber} - {car.mileage.number} {car.mileage.unit} - {car.fuelType} - {car.color}</div>
+                                    <div className="view-details"><a href="#/" onClick={deleteFromList(car.stockNumber)}>{DELETE}</a></div>
                                 </div>
                             </div>
-                        )
-                    })}
-
+                        </div>
+                    )
+                })}
             </div>
             <Footer />
         </div>

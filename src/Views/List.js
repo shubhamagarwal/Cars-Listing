@@ -39,8 +39,6 @@ const List = (props) => {
                 <img className="car-logo" alt="" style={loadStyle}/>
                 <div className="car-spec-list">
                     <div className="manufacture-name">Loading</div>
-                    <div></div>
-                    <div className="view-details"></div>
                 </div>
             </div>
         </div>)

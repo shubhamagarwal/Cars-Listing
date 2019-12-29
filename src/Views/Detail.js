@@ -42,7 +42,7 @@ export const Detail = ({match}) => {
     }
 
     return (
-        <>
+        <div className="app-container">
             <Header />
             {Object.keys(carDetails).length > 0 ? (
                 <div>
@@ -67,14 +67,14 @@ export const Detail = ({match}) => {
                                     save it in your collection of favourite
                                     items.
                                 </div>
-                                <a className="fav-btn" href="#" onClick={addToFavouriteList}>SAVE</a>
+                                <a className="fav-btn" href="#/" onClick={addToFavouriteList}>SAVE</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            ) : <div>No details found for this car.</div>}
+            ) : <div className="no-details">No details found for this car.</div>}
             <Footer />
-        </>
+        </div>
     )
 }
 

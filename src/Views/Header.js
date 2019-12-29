@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import {
     PURCHASE,
     MY_ORDERS,
-    SELL
+    SELL,
+    FAV_LIST
 } from '../Shared/Constant';
 import './Header.css';
 import logo from './../logo.png';
@@ -18,10 +19,10 @@ const Header = () => {
         <div className="header">
                 <Link to="/"><img src={logo} className="auto1-logo" alt="logo" /></Link>
                 <ul>
-                    <li><a href="#contact">{SELL}</a></li>
-                    <li><a href="#news">{MY_ORDERS}</a></li>
-                    <li><a href="#home">{PURCHASE}</a></li>
-                    {favList.length ? (<li><Link to="/favourite">Fav List</Link></li>) : ''}
+                    <li><Link to="/">{SELL}</Link></li>
+                    <li><Link to="/">{MY_ORDERS}</Link></li>
+                    <li><Link to="/">{PURCHASE}</Link></li>
+                    {favList.length ? (<li><Link to="/favourite">{FAV_LIST}</Link></li>) : ''}
                 </ul>
         </div>
     )
