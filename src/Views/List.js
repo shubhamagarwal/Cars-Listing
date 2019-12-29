@@ -29,6 +29,23 @@ const List = (props) => {
         onClickPreviousAndNext,
         onPageSelection
     } = props;
+
+    const loading = []
+    const loadStyle = { background: '#EDEDED' }
+
+    for(let i=0; i<10; i++) {
+        loading.push(<div className="car-listing" key={i}>
+            <div className="car-spec">
+                <img className="car-logo" alt="" style={loadStyle}/>
+                <div className="car-spec-list">
+                    <div className="manufacture-name">Loading</div>
+                    <div></div>
+                    <div className="view-details"></div>
+                </div>
+            </div>
+        </div>)
+    }
+    
     return (
         <>
             <div className="car-search-container">
@@ -71,16 +88,18 @@ const List = (props) => {
                         return (
                             <div key={i} className="car-listing">
                                 <div className="car-spec">
-                                    <img className="car-logo" src="https://auto1-js-task-api--mufasa71.repl.co/images/car.svg" alt="hello" />
+                                    <img className="car-logo" src={car.pictureUrl} alt={car.modelName} title={car.modelName} />
                                     <div className="car-spec-list">
                                         <div className="manufacture-name">{car.manufacturerName}</div>
                                         <div>Stock # {car.stockNumber} - {car.mileage.number} {car.mileage.unit} - {car.fuelType} - {car.color}</div>
-                                        <div className="view-details"><Link to={`/detail/${car.stockNumber}`} >{VIEW_DETAILS}</Link></div>
+                                        <div className="view-details"><Link to={`/detail/${car.stockNumber}`} target="_blank">{VIEW_DETAILS}</Link></div>
                                     </div>
                                 </div>
                             </div>
                         )
-                    }) : ''}
+                    }) : loading.map(load => {
+                        return (load)
+                    })}
                 </div>
             </div>
             <div className="pagination-wrapper">

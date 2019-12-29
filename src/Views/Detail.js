@@ -25,6 +25,22 @@ export const Detail = ({match}) => {
         fetchData();
     }, [carId]);
 
+    const addToFavouriteList = () => {
+        let favList = [];
+        favList = JSON.parse(localStorage.getItem('getFavList'));
+        if(favList === null) {
+            favList = []
+        }
+        favList = checkforDuplicateFavourite(favList, carDetails);
+        localStorage.setItem('getFavList', JSON.stringify(favList));
+    }
+
+    const checkforDuplicateFavourite = (favList, carToAdd) => {
+        const found = favList.some(el => el.stockNumber === carToAdd.stockNumber);
+        if (!found) favList.push(carToAdd);
+        return favList;
+    }
+
     return (
         <>
             <Header />
@@ -51,7 +67,7 @@ export const Detail = ({match}) => {
                                     save it in your collection of favourite
                                     items.
                                 </div>
-                                <a className="fav-btn" href="/#" >SAVE</a>
+                                <a className="fav-btn" href="#" onClick={addToFavouriteList}>SAVE</a>
                             </div>
                         </div>
                     </div>

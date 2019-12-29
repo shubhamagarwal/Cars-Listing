@@ -9,3 +9,4 @@ export const AVAILABLE_CARS = 'Available Cars';
 export const FILTER = 'Filter';
 export const MANUFACTURER = 'Manufacturer';
 export const COLOR = 'Color';
+export const DELETE = 'Delete';
