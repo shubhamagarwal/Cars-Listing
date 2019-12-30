@@ -3,6 +3,11 @@ import axios from 'axios';
 import Header from './Header';
 import Footer from './Footer';
 import './Detail.css';
+import {
+    NO_DETAILS,
+    CAR_LIKE_TEXT,
+    CAR_STOCK_DETAIL
+} from '../Shared/Constant';
 
 export const Detail = ({match}) => {
     const {
@@ -56,23 +61,18 @@ export const Detail = ({match}) => {
                                     {carDetails.mileage.number} {carDetails.mileage.unit} - 
                                     {carDetails.fuelType} - {carDetails.color}
                                 </div>
-                                <div className="delivery-info">This car is currently available and can be delivered as soon as
-                                    <br />tomorrow morning. Please be aware that delivery times shown in
-                                    this page are not definitive and may change due to bad weather
-                                    conditions.
+                                <div className="delivery-info">{CAR_STOCK_DETAIL}
                                 </div>
                             </div>
                             <div className="fav-section">
-                                <div className="fav-text">If you like this car, click the button and
-                                    save it in your collection of favourite
-                                    items.
+                                <div className="fav-text">{CAR_LIKE_TEXT}
                                 </div>
                                 <a className="fav-btn" href="#/" onClick={addToFavouriteList}>SAVE</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            ) : <div className="no-details">No details found for this car.</div>}
+            ) : <div className="no-details">{NO_DETAILS}</div>}
             <Footer />
         </div>
     )
