@@ -15,10 +15,6 @@ const DropDown = (props) => {
             <Select
                 native
                 value={selectedFilterValue}
-                inputProps={{
-                    name: 'age',
-                    id: 'outlined-age-native-simple',
-                }}
                 onChange={getFilterValue(type)}
             >
                 {data.length && data.map((item,i) => {
