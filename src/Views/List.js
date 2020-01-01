@@ -31,14 +31,34 @@ const List = (props) => {
     } = props;
 
     const loading = []
-    const loadStyle = { background: '#EDEDED' }
+    const loadStyle = { 
+        imgStyle : {background: '#EDEDED' },
+        manufacturerStyle : { border: '2px solid #EDEDED',
+            width: '250px',
+            height: '20px',
+            background: '#EDEDED'
+        },
+        stockStyle : { border: '2px solid #EDEDED',
+            width: '250px',
+            height: '15px',
+            background: '#EDEDED'
+        },
+        ViewStyle : { border: '2px solid #EDEDED',
+            width: '150px',
+            height: '10px',
+            background: '#EDEDED',
+            margin: '8px 0px '
+        }
+    }
 
     for(let i=0; i<10; i++) {
         loading.push(<div className="car-listing" key={i}>
             <div className="car-spec">
-                <img className="car-logo" alt="" style={loadStyle}/>
+                <img className="car-logo" alt="" style={loadStyle.imgStyle}/>
                 <div className="car-spec-list">
-                    <div className="manufacture-name">Loading</div>
+                    <div className="manufacture-name" style={loadStyle.manufacturerStyle}></div>
+                    <div style={loadStyle.stockStyle}></div>
+                    <div style={loadStyle.ViewStyle}></div>
                 </div>
             </div>
         </div>)
@@ -70,7 +90,7 @@ const List = (props) => {
                     <div className="car-header">
                         <div className="car-availibility">
                             <span className="cars-count">{AVAILABLE_CARS}</span>
-                            <span>Showing 10 of {totalCarsCount} results</span>
+                            <span>Showing {carsList.length} of {totalCarsCount} results</span>
                         </div>
                         <div className="sort-mileage">
                             <span>Sort By</span> 
