@@ -1,5 +1,4 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import { Grid, Fab } from '@material-ui/core'
 import { ArrowBackIos, ArrowForwardIos, MoreHoriz } from '@material-ui/icons'
 import { withStyles } from '@material-ui/core/styles'
@@ -159,29 +158,5 @@ const Pagination = ({
     </Grid>
   )
 }
-
-// DrawerPagination.propTypes = {
-//   totalPages: PropTypes.number,
-//   currentPage: PropTypes.number,
-//   maxPages: PropTypes.number,
-//   onClickPreviousAndNext: PropTypes.func.isRequired,
-//   onSelectPage: PropTypes.func.isRequired,
-//   classes: PropTypes.shape({
-//     ellipsis: PropTypes.string,
-//     fab: PropTypes.string,
-//     disabled: PropTypes.string,
-//     secondry: PropTypes.string,
-//     primary: PropTypes.string,
-//     spacing: PropTypes.string,
-//     arrow: PropTypes.string
-//   })
-// }
-
-// DrawerPagination.defaultProps = {
-//   currentPage: 1,
-//   totalPages: 1,
-//   maxPages: 1,
-//   classes: {}
-// }
 
 export default withStyles(styles, { withTheme: true })(Pagination)
