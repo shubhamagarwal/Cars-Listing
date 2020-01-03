@@ -1,3 +1,15 @@
 .filter-box > .selectedColor .selectedManufactured {
     margin-bottom: 24px !important;
 }
+
+.selectedColor > div > fieldset {
+    border-color: #EDEDED !important;
+}
+
+.selectedManufactured > div > fieldset {
+    border-color: #EDEDED !important;
+}
+
+.getMileageValue > div > fieldset {
+    border-color: #EDEDED !important;
+}
