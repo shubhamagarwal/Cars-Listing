@@ -11,6 +11,8 @@ Steps to run the project :=
 
 Server is going to run at localhost 3001 (http://localhost:3001)
 
+Project in sandbox mode (https://mwk4v.csb.app/)
+
 
 # Technology Used
 
